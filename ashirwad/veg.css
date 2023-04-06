@@ -1,0 +1,49 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+.veg {
+    text-align: center;
+    font-size: 60px;
+    
+}
+button {
+    background-color: yellow;
+    border-radius: 5px;
+    width: 80px;
+    height: 25px;
+    text-align: center;
+    cursor: pointer;
+}
+  
+
+.speciall {
+    border: 2px solid black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+  }
+    .veg-item, img {
+    border: 0px solid blue;
+    width: 350px;
+    height: 250px;
+    float: left;
+    margin-top: 70px;
+    margin-bottom: 20px;
+    margin-left: 50px;
+    object-fit: contain;
+    object-position: bottom;
+    text-align: center;
+    font-size: large;
+    box-shadow:rgba(230, 55, 11, 0.948);
+    box-decoration-break: slice;
+transition: transform 1s;
+  }
+  /* .special_pro:hover{
+    transform: scale(1.1);
+  } */
+  .footer {
+    margin-top: 1150px;
+  }
+
+  

@@ -1,0 +1,251 @@
+h1{
+  font-weight: bold;
+  font-size: 50px;
+}
+#ppp ul {
+    list-style: none;
+}
+#ppp ul li {
+    background-color:whitesmoke;
+    /* border:2px solid black; */
+    width: 130px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    float: left;
+    position: relative;
+}
+#ppp ul li a {
+    text-decoration:none;
+    color:rgba(230, 55, 11, 0.948);
+    display:block;
+}
+#ppp ul li a:hover {
+    background-color: black;
+}
+#ppp ul ul {
+    position: absolute;
+    display: none;
+}
+#ppp ul li:hover > ul {
+    display:block;
+}
+
+
+:root{
+    --red:#ff3838;
+  }
+  
+  *{
+    font-family: 'Nunito', sans-serif;
+    margin:0; padding:0;
+    box-sizing: border-box;
+    outline: none; border:none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition:all .2s linear;
+  }
+  
+  /* *::selection{
+    background:var(--red);
+    color:#fff;
+  } */
+  
+  html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    scroll-padding-top: 6rem;
+  }
+  
+  body{
+    background:#f7f7f7;
+  }
+  
+  section{
+    padding:2rem 9%;
+  }
+  
+  .heading{
+    text-align: center;
+    font-size: 3.5rem;
+    padding:1rem;
+    color:#666;
+  }
+  
+  .heading span{
+    color:var(--red);
+  }
+  
+  .btn{
+    display: inline-block;
+    padding:.8rem 3rem;
+    border:.2rem solid var(--red);
+    color:var(--red);
+    cursor: pointer;
+    font-size: 1.7rem;
+    border-radius: .5rem;
+    position: relative;
+    overflow: hidden;
+    z-index: 0;
+    margin-top: 1rem;
+  }
+  
+  .btn::before{
+    content: '';
+    position: absolute;
+    top:0; right: 0;
+    width:0%;
+    height:100%;
+    background:var(--red);
+    transition: .3s linear;
+    z-index: -1;
+  }
+  
+  .btn:hover::before{
+    width:100%;
+    left: 0;
+  }
+  
+  .btn:hover{
+    color:#fff;
+  }
+  
+  header{
+    position: fixed; 
+    top:0; left: 0; right:0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background:#fff;
+    padding:2rem 9%;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+  }
+  
+  header .logo{
+    font-size: 2.5rem;
+    font-weight: bolder;
+    color:#666;
+  }
+  
+  header .logo i{
+    padding-right: .5rem;
+    color:var(--red);
+  }
+  
+  header .navbar a{
+    font-size: 2rem;
+    margin-left: 2rem;
+    color:#666;
+  }
+  
+  header .navbar a:hover{
+    color:var(--red);
+  }
+  
+  #menu-bar{
+    font-size: 3rem;
+    cursor: pointer;
+    color:#666;
+    border:.1rem solid #666;
+    border-radius: .3rem;
+    padding:.5rem 1.5rem;
+    display: none;
+  }
+  
+  .home{
+    display: flex;
+    flex-wrap: wrap;
+    gap:1.5rem;
+    min-height: 100vh;
+    align-items: center;
+    background:url(images/dinning.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+  
+  .home .content{
+    flex:1 1 40rem;
+    padding-top: 6.5rem;
+  }
+  
+  .home .image{
+    flex:1 1 40rem;
+  }
+  
+  .home .image img{
+    width:100%;
+    padding:1rem;
+    animation:float 3s linear infinite;
+  }
+  
+  @keyframes float{
+    0%, 100%{
+      transform: translateY(0rem);
+    }
+    50%{
+      transform: translateY(3rem);
+    }
+  }
+  
+  .home .content h3{
+    font-size: 5rem;
+    color:#333;
+  }
+  
+  .home .content p{
+    font-size: 1.7rem;
+    color:#666;
+    padding:1rem 0;
+  }
+  
+
+  .special {
+    border: 0px solid black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+  }
+  .special_pro , img {
+    border: 0x solid red;
+    width: 350px;
+    height: 250px;
+    float: left;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    margin-left: 50px;
+    object-fit: contain;
+    object-position: bottom;
+    text-align: center;
+    font-size: large;
+    box-shadow:rgba(230, 55, 11, 0.948);
+    box-decoration-break: slice;
+transition: transform 1s;
+  }
+  .special_pro:hover{
+    transform: scale(1.1);
+  } 
+  .footer {
+       height: 250px;
+       width: 100%;
+       margin-top: 680px;
+       display: flex;
+       justify-content: space-around;
+       align-items: center;
+       background-color: black;
+  }
+  .footerb {
+    height: 180px;
+       width: 300px;
+       
+       float: left;
+       color: white;
+       font-size: 20px;
+       text-align: center;
+    
+  }
+  ul{
+    list-style: none;
+  }
+  
